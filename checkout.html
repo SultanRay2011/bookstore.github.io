@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Bookstore.com</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Checkout</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="login.html">Login</a>
+            <a href="signup.html">Sign Up</a>
+            <a href="author.html">Author</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Payment Details</h1>
+        <p>We would never steal you cards information. We respect your privacy 100%</p>
+        <style>
+            p{
+                text-align: center;
+            }
+        </style>
+        <form>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your full name" required>
+
+            <label for="card-number">Card Number</label>
+            <input type="text" id="card-number" placeholder="1234 5678 9012 3456" required>
+
+            <label for="expiry-date">Expiry Date</label>
+            <input type="month" id="expiry-date" required>
+
+            <label for="cvv">CVV</label>
+            <input type="password" id="cvv" placeholder="123" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="you@example.com" required>
+
+            <button type="submit">Pay Now</button>
+            <a href="home.html">Cancel Payment</a>
+        </form>
+    </div>
+    <footer>
+        <p style="text-align: center;">&copy; Bookstore Enterprise Limited 2025</p>
+    </footer>
+</body>
+</html>
